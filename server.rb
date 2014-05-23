@@ -1,7 +1,6 @@
 require_relative "movie_methods"
 require_relative "redis_methods"
 require 'sinatra'
-require 'pry'
 require 'csv'
 
 all_movies =read_movies_csv('movies.csv')
