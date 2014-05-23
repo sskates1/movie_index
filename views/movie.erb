@@ -1,0 +1,15 @@
+
+
+<h1>
+  <%=@movie[0]["title"] %>
+</h1>
+<ul>
+  <% @movie[0].each do |type,movie_attribute|%>
+    <%if movie_attribute != nil %>
+      <li>
+        <%=type %>: <%=movie_attribute %>
+      </li>
+    <%end%>
+  <% end %>
+</ul>
+

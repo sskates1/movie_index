@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> <%= @title || "Movies Index" %></title>
+<!--     <link rel="stylesheet" href="/style.css"> -->
+  </head>
+
+  <body>
+        <h1>
+          List of Movies
+        </h1>
+        <p>
+          <form action="/movies" method="get">
+            <label for="query">Search: </label>
+            <input type="text" name="query" id="query" />
+
+            <input type="submit" value="Search" />
+          </form>
+        </p>
+
+      <%= yield %>
+      <p><a href ="<%= "/movies"%>">Home</a></p>
+  </body>
+</html>
